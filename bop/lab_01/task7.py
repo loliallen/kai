@@ -7,12 +7,12 @@ def read_input(prefix = ""):
     return (number)
 
 def make_new(number):
-    return number[0] + number[1:3:1])
+    return (number[1:3:1] + number[0] )
 
 if __name__ == "__main__":
     number = read_input()
-    if(number.isdigit()):
+    if(number.isdigit() and len(number) == 3):
         num = make_new(number)
-        print("New number : ".format(num))
+        print("New number : {}".format(num))
     else:
         print("Bee... 🤢. ...🤮")

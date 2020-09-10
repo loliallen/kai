@@ -14,7 +14,7 @@ def sum_of_digits(number):
 
 if __name__ == "__main__":
     number = read_input()
-    if(number.isdigit()):
+    if(number.isdigit() and len(number) == 3):
         sum = sum_of_digits(number)
         print("Sum of digits : ".format(sum))
     else:

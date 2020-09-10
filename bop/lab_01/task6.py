@@ -11,7 +11,7 @@ def reverse(number):
 
 if __name__ == "__main__":
     number = read_input()
-    if(number.isdigit()):
+    if(number.isdigit() and len(number) == 3):
         sum = reverse(number)
         print("Reversed number : {}".format(sum))
     else:
